@@ -1,0 +1,100 @@
+{
+  "cities": [
+    {
+      "cityName": "Dresden",
+      "country": "Germany",
+      "emoji": "DE",
+      "date": "2023-12-06T05:59:59.360Z",
+      "notes": "very good",
+      "position": {
+        "lat": "51.05423621569879",
+        "lng": "13.68278503417969"
+      },
+      "id": 5
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2023-12-07T18:52:07.059Z",
+      "notes": "",
+      "position": {
+        "lat": "40.014731410518195",
+        "lng": "-0.06711959838867189"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Onda",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2023-12-07T18:52:11.250Z",
+      "notes": "very good ",
+      "position": {
+        "lat": "39.98369699673041",
+        "lng": "-0.1550102233886719"
+      },
+      "id": 7
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2023-12-07T18:54:45.038Z",
+      "notes": "half way good ",
+      "position": {
+        "lat": "40.00868343656941",
+        "lng": "-0.05390167236328126"
+      },
+      "id": 8
+    },
+    {
+      "cityName": "Greater Noida",
+      "country": "India",
+      "emoji": "IN",
+      "date": "2023-12-07T18:56:37.555Z",
+      "notes": "very nice place ",
+      "position": {
+        "lat": "28.399745356662695",
+        "lng": "77.5088882446289"
+      },
+      "id": 9
+    },
+    {
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "ES",
+      "date": "2023-12-07T19:08:39.986Z",
+      "notes": "good news ",
+      "position": {
+        "lat": "40.01118157772806",
+        "lng": "-0.024032592773437503"
+      },
+      "id": 10
+    },
+    {
+      "cityName": "Greater Noida",
+      "country": "India",
+      "emoji": "IN",
+      "date": "2023-12-07T19:12:29.575Z",
+      "notes": "very good place ",
+      "position": {
+        "lat": "28.453147074026226",
+        "lng": "77.46288299560548"
+      },
+      "id": 11
+    },
+    {
+      "cityName": "Greater Noida",
+      "country": "India",
+      "emoji": "IN",
+      "date": "2023-12-07T19:14:18.547Z",
+      "notes": "hello body",
+      "position": {
+        "lat": "28.480945790513005",
+        "lng": "77.48125076293947"
+      },
+      "id": 12
+    }
+  ]
+}

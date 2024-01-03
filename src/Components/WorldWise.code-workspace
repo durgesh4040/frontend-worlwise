@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "WorldWise",
+		"path": "../.."
+	},
+	{
+		"name": "data",
+		"path": "../../../001-JavaScript Course/ultimate-react-course/11-worldwise/starter/data"
+	}
+],
+  "settings": {}
+}
