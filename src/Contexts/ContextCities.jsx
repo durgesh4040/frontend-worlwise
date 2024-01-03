@@ -7,7 +7,7 @@ import {
   useReducer,
   useCallback,
 } from "react";
-const BASE_URL = "http://localhost:8080/cities";
+const BASE_URL = "https://backend-worldwise-production.up.railway.app/cities";
 //const AUTH_URL = "http://localhost:8080/cities/login";
 
 const CitiesContext = createContext();

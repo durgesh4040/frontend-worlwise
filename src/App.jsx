@@ -22,16 +22,19 @@ export default function App() {
     async function getToken() {
       try {
         if (!tokenFetched) {
-          const response = await fetch("http://localhost:8080/auth/login", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-              email: "Durgesh",
-              password: "abc",
-            }),
-          });
+          const response = await fetch(
+            "https://backend-worldwise-production.up.railway.app/auth/login",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: "Durgesh",
+                password: "abc",
+              }),
+            }
+          );
 
           if (response.ok) {
             const data = await response.json();
