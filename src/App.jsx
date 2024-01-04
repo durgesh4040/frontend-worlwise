@@ -15,45 +15,45 @@ import ProtectedRoute from "./Pages/ProtectedRoute";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [jwtToken, setJwtToken] = useState("");
-  const [tokenFetched, setTokenFetched] = useState(false);
+  // const [jwtToken, setJwtToken] = useState("");
+  // const [tokenFetched, setTokenFetched] = useState(false);
 
-  useEffect(() => {
-    async function getToken() {
-      try {
-        if (!tokenFetched) {
-          const response = await fetch(
-            "https://backend-worldwise-production.up.railway.app/auth/login",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                email: "Durgesh",
-                password: "abc",
-              }),
-            }
-          );
+  // useEffect(() => {
+  //   async function getToken() {
+  //     try {
+  //       if (!tokenFetched) {
+  //         const response = await fetch(
+  //           "https://backend-worldwise-production.up.railway.app/auth/login",
+  //           {
+  //             method: "POST",
+  //             headers: {
+  //               "Content-Type": "application/json",
+  //             },
+  //             body: JSON.stringify({
+  //               email: "Durgesh",
+  //               password: "abc",
+  //             }),
+  //           }
+  //         );
 
-          if (response.ok) {
-            const data = await response.json();
-            setJwtToken(data.jwtToken);
-            setTokenFetched(true);
-          } else {
-            console.error("Login failed");
-          }
-        }
-      } catch (error) {
-        console.error("Error during login", error);
-      }
-    }
+  //         if (response.ok) {
+  //           const data = await response.json();
+  //           setJwtToken(data.jwtToken);
+  //           setTokenFetched(true);
+  //         } else {
+  //           console.error("Login failed");
+  //         }
+  //       }
+  //     } catch (error) {
+  //       console.error("Error during login", error);
+  //     }
+  //   }
 
-    getToken();
-  }, [tokenFetched]);
+  //   getToken();
+  // }, [tokenFetched]);
 
   // Render the App component only when the token is fetched
-  return tokenFetched ? (
+  return tokenFetched  (
     <AuthProvider>
       <CitiesProvider jwtToken={jwtToken}>
         <BrowserRouter>
@@ -83,5 +83,5 @@ export default function App() {
         </BrowserRouter>
       </CitiesProvider>
     </AuthProvider>
-  ) : null;
+  ) ;
 }
