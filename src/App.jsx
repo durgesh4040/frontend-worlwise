@@ -12,7 +12,7 @@ import Form from "./Components/Form";
 import { CitiesProvider } from "./Contexts/ContextCities";
 import { AuthProvider } from "./Contexts/fakeAuthContext";
 import ProtectedRoute from "./Pages/ProtectedRoute";
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 
 export default function App() {
   // const [jwtToken, setJwtToken] = useState("");
@@ -53,9 +53,9 @@ export default function App() {
   // }, [tokenFetched]);
 
   // Render the App component only when the token is fetched
-  return tokenFetched  (
+  return  (
     <AuthProvider>
-      <CitiesProvider jwtToken={jwtToken}>
+      <CitiesProvider >
         <BrowserRouter>
           <Routes>
             {/* <Route path="/" element={<HomePage />} /> */}
